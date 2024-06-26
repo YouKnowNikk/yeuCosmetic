@@ -16,9 +16,8 @@ function PortalConfig() {
     <Route path ="/membership" element ={<p>This Is membership Page</p>}/>
     <Route path='/virtual-config' element = {<VirtualMakeup/>}/>
     <Route path='*' element={<PageNotFound/>}/>
-
    </Routes>
   )
 }
 
-export default PortalConfig
+export default PortalConfig;

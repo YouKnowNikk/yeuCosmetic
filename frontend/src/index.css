@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.custom-overlay {
+    background-color: rgba(0, 0, 0, 0.4); 
+    transition: 0.5s;
+  }
+
+.hoverEffectt:hover .custom-overlay{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.saclezoom{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.parentzoom:hover .saclezoom{
+    transform: scale(1.5);
+}
+  

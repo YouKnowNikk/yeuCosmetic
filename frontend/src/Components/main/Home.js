@@ -6,8 +6,10 @@ import ProductGrid from './ProductGrid';
 import techosImg from '../images/Rectangle 14.svg'
 import { Link } from 'react-router-dom';
 import MakeupImg from './MakeupImg'
-import Marquee from 'react-fast-marquee';
-import Rectangle2 from "../images/Rectangle 16.png";
+import ScrollingImages from './ScrollingImages'; // scrolling component 
+import Footer from './Footer';
+
+
 
 
 const HomePage = () => {
@@ -48,28 +50,18 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+
         <div>
           <MakeupImg/>
         </div>
 
         <div>
-        <h1 className="text-center italic text-2xl font-bold mt-10"> ELITE ACCESS </h1>
-        <div>
-          <div className='flex w-full flex-col '>
-            {/* <Marquee autoFill pauseOnHover >
-              <div className=' space-x-5 cursor-pointer '>
-              <img className="w-full" src={Rectangle2} alt="Rectangle1" />
-
-               
-              </div>
-            </Marquee> */}
-
-          </div>
+          <ScrollingImages/>
         </div>
-        </div>
+      </div>
 
-        
-
+      <div className='border bg-[#F4F4F4] container mx-auto py-8 lg:w-3/4 w-full max-w-screen-md'>
+      <Footer/>
       </div>
     </>
   );
