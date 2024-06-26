@@ -2,6 +2,8 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from '../main/Home'
 import PageNotFound from '../main/PageNotFound'
+// import VirtualMakeup from '../VirtuallArConfig.js/VirtualConfig'
+import Makeup from '../VirtuallArConfig.js/Makeup'
 import VirtualMakeup from '../VirtuallArConfig.js/VirtualConfig'
 
 function PortalConfig() {

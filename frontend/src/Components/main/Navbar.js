@@ -93,6 +93,9 @@ const Navbar = () => {
               <FiUser size={20} />
             </Link>
             <Link to="/" className="text-white hover:text-gray-300 hover:cursor-pointer">
+              <FaRegHeart size={20} />
+            </Link>
+            <Link to="/" className="text-white hover:text-gray-300 hover:cursor-pointer">
               <FiSearch size={20} />
             </Link>
             <Link to="/" className="text-white hover:text-gray-300 hover:cursor-pointer">
