@@ -9,6 +9,10 @@ app.use(cors({
 app.use(express.json({limit:'20kb'}))
 app.use(express.urlencoded({extended:true,limit:'20kb'}))
 app.use(express.static("public"));
-app.use(cookieParser())
+app.use(cookieParser());
 
+
+import productRoutes from './routes/product.routes.js'
+
+app.use("/products",productRoutes)
 export {app}
