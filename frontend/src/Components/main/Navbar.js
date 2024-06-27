@@ -1,15 +1,22 @@
+// Navbar.js
 import React, { useState } from 'react';
 import { FiUser, FiSearch, FiShoppingCart, FiMenu } from 'react-icons/fi';
 import { RxCross1 } from "react-icons/rx";
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../images/Logo Of yeu 1.svg';
 import { FaRegHeart } from "react-icons/fa";
+import Search from './Search';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleSearchToggle = () => {
+    setIsSearchOpen(!isSearchOpen);
   };
 
   return (
@@ -78,13 +85,12 @@ const Navbar = () => {
             <Link to="/" className="text-white hover:text-gray-300 hover:cursor-pointer">
               <FaRegHeart size={20}/>
             </Link>
-            <Link to="/" className="text-white hover:text-gray-300 hover:cursor-pointer">
+            <Link className="text-white hover:text-gray-300 hover:cursor-pointer" onClick={handleSearchToggle}>
               <FiSearch size={20} />
             </Link>
             <Link to="/" className="text-white hover:text-gray-300 hover:cursor-pointer">
               <FiShoppingCart size={20} />
             </Link>
-            
           </div>
 
           {/* Mobile user actions section */}
@@ -95,7 +101,7 @@ const Navbar = () => {
             <Link to="/" className="text-white hover:text-gray-300 hover:cursor-pointer">
               <FaRegHeart size={20} />
             </Link>
-            <Link to="/" className="text-white hover:text-gray-300 hover:cursor-pointer">
+            <Link className="text-white hover:text-gray-300 hover:cursor-pointer" onClick={handleSearchToggle}>
               <FiSearch size={20} />
             </Link>
             <Link to="/" className="text-white hover:text-gray-300 hover:cursor-pointer">
@@ -147,6 +153,11 @@ const Navbar = () => {
             >
               Blogs
             </NavLink>
+          </div>
+        )}
+        {isSearchOpen && (
+          <div className="absolute top-full left-0 right-0 bg-white p-4">
+            <Search />
           </div>
         )}
       </div>
