@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import heroSvg from '../images/hro 1.svg'; // Update with your actual hero SVG image path
 import HighlightedProducts from './HighlightedProducts';
 import ProductGrid from './ProductGrid';
-import techosImg from '../images/Rectangle 14.svg'
+import techosImg from '../images/Rectangle 14.png'
 import { Link } from 'react-router-dom';
 import MakeupImg from './MakeupImg'
 import ScrollingImages from './ScrollingImages'; // scrolling component 
@@ -60,7 +60,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className='border bg-[#F4F4F4] container mx-auto py-8 lg:w-3/4 w-full max-w-screen-md'>
+      <div className='bg-[#F4F4F4] container mx-auto py-8 lg:w-3/4 w-full max-w-screen-md'>
       <Footer/>
       </div>
     </>

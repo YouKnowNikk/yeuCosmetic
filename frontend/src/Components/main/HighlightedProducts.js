@@ -1,6 +1,6 @@
 import React from 'react';
-import lipstick from '../images/Rectangle 8.svg'; 
-import blush from '../images/Rectangle 9.svg';
+import lipstick from '../images/Rectangle 8.png'; 
+import blush from '../images/Rectangle 9.png';
 const products = [
   {
     id: 1,

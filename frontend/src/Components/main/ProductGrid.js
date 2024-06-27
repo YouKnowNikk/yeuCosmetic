@@ -1,8 +1,8 @@
 import React from 'react';
-import img1 from '../images/Rectangle 10.svg';
-import img2 from '../images/Rectangle 11.svg';
-import img3 from '../images/Rectangle 12.svg';
-import img4 from '../images/Rectangle 13.svg';
+import img1 from '../images/Rectangle 10.png';
+import img2 from '../images/Rectangle 11.png';
+import img3 from '../images/Rectangle 12.png';
+import img4 from '../images/Rectangle 13.png';
 
 const products = [
   {
