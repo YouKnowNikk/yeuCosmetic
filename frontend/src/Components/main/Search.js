@@ -15,16 +15,16 @@ const Search = () => {
   };
 
   return (
-    <form onSubmit={handleSearch} className="relative">
+    <form onSubmit={handleSearch} className="flex justify-center">
       <input
         type="text"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         placeholder="Search for products..."
-        className="border-2 border-gray-300 rounded-full px-4 py-2"
+        className=" w-[400px] px-4 py-2 focus:outline-none search-input "
       />
-      <button type="submit" className="absolute right-2 top-1/2 transform -translate-y-1/2">
-        <FiSearch size={20} className="text-gray-500" />
+      <button type="submit" className="search-button m-0  ">
+        <FiSearch size={20} className="text-black font-bold" />
       </button>
     </form>
   );

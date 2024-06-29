@@ -20,4 +20,36 @@
 .parentzoom:hover .saclezoom{
     transform: scale(1.5);
 }
+
+
+.search-input{
+    border-right: none;
+    border-radius: 20px 0px 0px 20px;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 255, 255, 0.053); 
+    backdrop-filter: blur(3px);
+    border: 2px rgba(255, 255, 255, 0.715) solid;
+    border-right: none;
+    user-select: none;
+}
+
+.search-input::placeholder {
+    color: #545151;
+    font-weight: 400px;
+}
+
+.search-button{
+    border-radius: 0px 20px 20px 0px;
+    border-left: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.053); 
+    backdrop-filter: blur(3px);
+    border: 2px rgba(255, 255, 255, 0.715) solid;
+    border-left: none;
+}
+
+.search-button:hover{
+    background: rgba(255, 251, 251, 0.541); 
+}
   

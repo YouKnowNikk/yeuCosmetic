@@ -60,9 +60,12 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className='bg-[#F4F4F4] container mx-auto py-8 lg:w-3/4 w-full max-w-screen-md'>
+
+     <div className='bg-[#F4F4F4]'>
+      <div className=' container mx-auto py-8 lg:w-3/4 w-full max-w-[1200px]'>
       <Footer/>
       </div>
+     </div>
     </>
   );
 }

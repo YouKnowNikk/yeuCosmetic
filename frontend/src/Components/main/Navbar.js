@@ -6,6 +6,8 @@ import { Link, NavLink } from 'react-router-dom';
 import logo from '../images/Logo Of yeu 1.svg';
 import { FaRegHeart } from "react-icons/fa";
 import Search from './Search';
+import { RxCross2 } from "react-icons/rx";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -86,7 +88,7 @@ const Navbar = () => {
               <FaRegHeart size={20}/>
             </Link>
             <Link className="text-white hover:text-gray-300 hover:cursor-pointer" onClick={handleSearchToggle}>
-              <FiSearch size={20} />
+            { isSearchOpen ? <RxCross2 size={20} />  : <FiSearch size={20} /> }            
             </Link>
             <Link to="/" className="text-white hover:text-gray-300 hover:cursor-pointer">
               <FiShoppingCart size={20} />
@@ -102,7 +104,7 @@ const Navbar = () => {
               <FaRegHeart size={20} />
             </Link>
             <Link className="text-white hover:text-gray-300 hover:cursor-pointer" onClick={handleSearchToggle}>
-              <FiSearch size={20} />
+            { isSearchOpen ? <RxCross2 size={20} />  : <FiSearch size={20} /> }            
             </Link>
             <Link to="/" className="text-white hover:text-gray-300 hover:cursor-pointer">
               <FiShoppingCart size={20} />
@@ -156,7 +158,7 @@ const Navbar = () => {
           </div>
         )}
         {isSearchOpen && (
-          <div className="absolute top-full left-0 right-0 bg-white p-4">
+          <div className="absolute top-full left-0 right-0  p-4">
             <Search />
           </div>
         )}
