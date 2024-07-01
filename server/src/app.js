@@ -13,6 +13,10 @@ app.use(cookieParser());
 
 
 import productRoutes from './routes/product.routes.js'
+import cartRoutes from './routes/cart.routes.js'
+import userRoutes from './routes/user.routes.js'
 
 app.use("/products",productRoutes)
+app.use("/cart",cartRoutes)
+app.use("/user",userRoutes)
 export {app}

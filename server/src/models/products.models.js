@@ -30,7 +30,9 @@ const productSchema = new Schema({
         averageRating: { type: Number },  
         numberOfReviews: { type: Number } 
     },
-    tags: [{ type: String }]
+    tags: { type: String }
 }, { timestamps: true });
+
+productSchema.index({ title: "text", shortDescription: "text", description: "text" ,modelNumber:"text" ,category:'text'});
 
 export const Product = mongoose.model('Product', productSchema);
