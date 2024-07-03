@@ -6,6 +6,9 @@ import PageNotFound from '../main/PageNotFound'
 import Makeup from '../VirtuallArConfig.js/Makeup'
 import VirtualMakeup from '../VirtuallArConfig.js/VirtualConfig'
 import ProductList from '../main/ProductList'
+import RegistrationForm from '../userCred/RegistrationForm'
+import LoginForm from '../userCred/LoginForm'
+import ForgetPassword from '../userCred/ForgetPassword'
 
 function PortalConfig() {
   return (
@@ -17,6 +20,13 @@ function PortalConfig() {
     <Route path ="/membership" element ={<p>This Is membership Page</p>}/>
     <Route path='/virtual-config' element = {<VirtualMakeup/>}/>
     <Route path='*' element={<PageNotFound/>}/>
+
+    <Route path='/registration' element={<RegistrationForm/>}/>
+    <Route path='/login' element={<LoginForm/>}/>
+    <Route path='/forgetpassword' element={<ForgetPassword/>}/>
+
+
+
    </Routes>
   )
 }

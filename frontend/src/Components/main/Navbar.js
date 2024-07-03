@@ -81,7 +81,7 @@ const Navbar = () => {
 
           {/* User actions section */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/" className="text-white hover:text-gray-300 hover:cursor-pointer">
+            <Link to="/login" className="text-white hover:text-gray-300 hover:cursor-pointer">
               <FiUser size={20} />
             </Link>
             <Link to="/" className="text-white hover:text-gray-300 hover:cursor-pointer">
