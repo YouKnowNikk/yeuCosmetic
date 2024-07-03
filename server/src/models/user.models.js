@@ -39,4 +39,15 @@ userSchema.methods.genrateAccessToken = function() {
       },process.env.ACCESS_TOKEN_SECRET,{expiresIn:'10d'})
   
   }
+
+  userSchema.methods.addOrUpdateAddress = async function(address) {
+    const existingAddressIndex = this.addresses.findIndex(a => a._id.equals(address._id));
+    if (existingAddressIndex > -1) {
+        this.addresses[existingAddressIndex] = address;
+    } else {
+        this.addresses.push(address);
+    }
+    await this.save();
+};
+
 export const User = mongoose.model('User', userSchema);
